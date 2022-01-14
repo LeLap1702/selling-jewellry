@@ -1,0 +1,141 @@
+.containerCart {
+    margin: 6% 12% 0 12%;
+    font-size: 20px;
+    padding: 1%;
+    height: auto;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+.containerCart hr {
+    width: 100%;
+}
+
+.close_CartDetails {
+    text-align: right;
+    font-size: 25px;
+}
+
+.close_CartDetails a {
+    color: #000;
+}
+
+#title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.content {
+    margin: 5% 0;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.imgProCart_details img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+.infProCart_details {
+    width: 500px;
+    padding: 1rem;
+}
+
+.quantity input {
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.pricePro_details {
+    width: 70px;
+    text-align: center;
+}
+
+.calculateTotal {
+    width: 150px;
+    text-align: center;
+    padding: 1rem;
+}
+
+table {
+    border: 1px solid lightgray;
+    text-align: center;
+    line-height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#empty_cart {
+    position: relative;
+    width: 100%;
+}
+
+.orderNotes textarea {
+    font-size: 20px;
+    border: solid lightgray 1px;
+    outline: none;
+    padding: 1rem;
+}
+
+.orderNotes h4 {
+    margin-bottom: 0;
+}
+
+.orderInf {
+    border: 1px solid lightgray;
+    padding: 0 2rem;
+}
+
+.orderInf h3 {
+    margin-top: 30px;
+    margin-bottom: 27px;
+}
+
+.orderInf button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 17px;
+    background-color: #000;
+    color: #fff;
+}
+
+.orderInf button:hover {
+    background-color: #fff;
+    color: #000;
+    border: #000 solid 1px;
+}
+
+@media (max-width: 1204px) {
+    .imgProCart_details img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        padding: 0.5rem;
+    }
+    .yourCart table {
+        border: none;
+    }
+    .orderInf {
+        border: none;
+    }
+    .infProCart_details {
+        width: 250px;
+        padding: 0.5rem;
+    }
+    .calculateTotal {
+        width: 100px;
+        padding: 0.5rem;
+    }
+    .orderNotes textarea {
+        font-size: 20px;
+        border: solid lightgray 1px;
+        outline: none;
+        padding: 0.5rem;
+    }
+}

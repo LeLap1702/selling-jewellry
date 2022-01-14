@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Admin Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftSection">
+            <div class="admin">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <p>admin</p>
+            </div>
+            <div class="homePage">
+                <a href="admin.html">
+                    <ion-icon name="home-outline"></ion-icon>Home</a>
+            </div>
+            <div class="manage">
+                <div class="title">manage</div>
+                <ul>
+                    <li class="manageClick">
+                        <a href="#">
+                            <ion-icon name="stats-chart-sharp"></ion-icon>Manage Customers</a>
+                    </li>
+                    <li class="manageClick">
+                        <a href="#">
+                            <ion-icon name="stats-chart-sharp"></ion-icon>Manage Products</a>
+                    </li>
+                    <li class="manageClick">
+                        <a href="#">
+                            <ion-icon name="stats-chart-sharp"></ion-icon>Manage Bills</a>
+                    </li>
+                    <li class="manageClick">
+                        <a href="#">
+                            <ion-icon name="stats-chart-sharp"></ion-icon>Manage Orders Date</a>
+                    </li>
+                </ul>
+                <button id="back">
+                <a href="index.html" >
+                    <ion-icon name="arrow-back-circle-outline"></ion-icon>
+                </a>
+              </button>
+            </div>
+        </div>
+        <div class="mainSection">
+            <h2>Statistics</h2>
+            <div class="top-content">
+
+                <div class="top-item">
+                    <div class="top-text">
+                        Quantity of customers
+                        <div id="qty-cus">0</div>
+                    </div>
+                    <span class="top-icon"><ion-icon name="calculator-outline"></ion-icon></span>
+                </div>
+                <div class="top-item">
+                    <div class="top-text">
+                        Quantity of products
+                        <div id="qty-pro">0</div>
+                    </div>
+                    <span class="top-icon"><ion-icon name="calculator-outline"></ion-icon></span>
+                </div>
+                <div class="top-item">
+                    <div class="top-text">
+                        Quantity of bills
+                        <div id="qty-bill">0</div>
+                    </div>
+                    <span class="top-icon"><ion-icon name="calculator-outline"></ion-icon></span>
+                </div>
+                <div class="top-item">
+                    <div class="top-text">
+                        Orders for today
+                        <div id="qty-order-day">0</div>
+                    </div>
+                    <span class="top-icon"><ion-icon name="calculator-outline"></ion-icon></span>
+                </div>
+            </div>
+            <div class="manageData">
+                <div id="manageProducts">
+                    <button id="create" type="button">Create <ion-icon name="add-circle-outline"></ion-icon></button>
+                    <div class="allForm">
+                        <div class="form">
+                            <form class="group-form">
+                                <div class="input-group">
+                                    <span>Type: </span>
+                                    <select id="type">
+                            <option value="necklace">necklace</option>
+                            <option value="ring">ring</option>
+                            <option value="earring">earring</option>
+                            <option value="bracelet">bracelet</option>
+                            <option value="anklet">anklet</option>
+                        </select>
+                                </div>
+                                <div class="input-group">
+                                    <label for="name">Name: </label>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                                <div class="input-group">
+                                    <label for="price">Price: </label>
+                                    <input type="text" name="price" id="price">
+                                </div>
+                                <div class="input-group" id="addUrl">
+                                    <label for="urlImage">Image (url): </label>
+                                    <div id="urlImage">
+                                        <input type="text" name="image">
+                                        <input type="text" name="image">
+                                        <input type="text" name="image">
+                                        <input type="text" name="image">
+                                    </div>
+
+
+                                </div>
+                                <button type="button" onclick="add()">Add</button>
+                            </form>
+
+                            <form class="group-form-hide">
+                                <div class="input-group">
+                                    <span>Type: </span>
+                                    <select id="typeedit">
+                            <option value="necklace">necklace</option>
+                            <option value="ring">ring</option>
+                            <option value="earring">earring</option>
+                            <option value="bracelet">bracelet</option>
+                            <option value="anklet">anklet</option>
+                        </select>
+                                </div>
+                                <div class="input-groupe">
+                                    <label for="nameedit">Name: </label>
+                                    <input type="text" name="namee" id="nameedit">
+                                </div>
+                                <div class="input-groupe">
+                                    <label for="priceedit">Price: </label>
+                                    <input type="text" name="pricee" id="priceedit">
+                                </div>
+                                <div class="input-groupe" id="addUrle">
+                                    <label for="urlImageedit">Image (url): </label>
+                                    <div id="urlImageedit">
+                                        <input type="text" name="imagee">
+                                        <input type="text" name="imagee">
+                                        <input type="text" name="imagee">
+                                        <input type="text" name="imagee">
+                                    </div>
+
+                                </div>
+
+                                <div id="edit">
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Type</th>
+                                <th>Product name</th>
+                                <th>Price</th>
+                                <th>Image</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="products">
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="manageBills">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Numerical</th>
+                                <th>ID</th>
+                                <th>Order date</th>
+                                <th>Customer name</th>
+                                <th>Total price</th>
+                                <th>Shipment fee</th>
+                                <th>Shipment details</th>
+                                <th>View details</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bills">
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="seeOrderDetail">
+                    <div class="seeOrderDetailContainer animate">
+                        <div class="seeOrderTittle">
+                            <h2 style="text-transform: uppercase;">order details</h2>
+                            <button id="closeSeeOrderDetail"><ion-icon name="close-outline"></ion-icon></button>
+                        </div>
+                        <div class="seeOrderContent">
+                            <table>
+                                <thead id="seeOrderTableHeader">
+                                    <tr>
+                                        <th>Numerical order</th>
+                                        <th>Product name</th>
+                                        <th>Amount</th>
+                                        <th>Price</th>
+                                        <th>Image</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="displaySeeOrder">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="manageCustomer">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Numerical</th>
+                                <th>Username</th>
+                                <th>Phone number</th>
+                                <th>Email</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="customers">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div id="manageCustomerDetail">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Numerical</th>
+                                <th>ID Customer</th>
+                                <th>Receiver</th>
+                                <th>Order details</th>
+                                <th>Total price</th>
+                                <th>Shipment details</th>
+                            </tr>
+                        </thead>
+                        <tbody id="customersDetail">
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="manageOrderDate">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Numerical</th>
+                                <th>ID</th>
+                                <th>Customer name</th>
+                                <th>Phone number</th>
+                                <th>Email</th>
+                                <th>Time order</th>
+                                <th>Total price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orderDate">
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <button type="button" onclick="backToTop()" id="backTop" title="Go to top"><ion-icon name="arrow-up-circle-outline"></ion-icon></button>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+
+</html>

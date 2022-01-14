@@ -1,0 +1,57 @@
+.image-top {
+    overflow: hidden;
+}
+
+.image-top img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+    transition: .8s ease;
+}
+
+.image-top img:hover {
+    transform: scale(1.3);
+}
+
+.card {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: .4s;
+}
+
+.product-name {
+    padding: 10px 0;
+    width: 222px;
+    height: 50px;
+    display: inline-block;
+}
+
+.product-price {
+    color: red;
+    font-weight: 500;
+}
+
+.product-price::before {
+    content: "$";
+}
+
+.addToCard {
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 62%;
+    right: 30%;
+    border: none;
+    color: #ffff;
+    display: none;
+}
+
+.card:hover .addToCard {
+    background-color: rgba(255, 0, 0, 0.489);
+    display: block;
+}

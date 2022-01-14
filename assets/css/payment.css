@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=M+PLUS+1p:wght@500&family=Mukta&family=NTR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Vujahday+Script&display=swap');
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 1270px;
+    margin: 0 auto;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'NTR', sans-serif;
+    font-size: 19px;
+}
+
+.indexing {
+    background-color: rgba(204, 204, 204, 0.352);
+    padding: 2px 0px;
+}
+
+.indexing ul {
+    list-style: none;
+    display: flex;
+    margin-left: -40px;
+}
+
+.indexing ul li {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.indexing ul li a {
+    text-decoration: none;
+}
+
+.indexing ul>li+li:before {
+    content: "/\00a0";
+    margin: 0 10px 0 0;
+}
+
+.headerPaymentPage {
+    width: 1270px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.fullName {
+    width: 500px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#txtEmail {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#txtPhone {
+    width: 190px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.address {
+    width: 500px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#txtProvince {
+    width: 160px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#txtDistrict {
+    width: 160px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#txtCommune {
+    width: 160px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.layout-1 {
+    display: flex;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+#infor {
+    display: none;
+    max-width: 502px;
+    margin-top: 10px;
+}
+
+.border {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 480px;
+    background-color: white;
+}
+
+#signUpHere {
+    text-decoration: none;
+    color: #3da9e2;
+}
+
+#completeOrder {
+    background-color: #3DA9E2;
+    padding: 14px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input {
+    font-size: 16px;
+}
+
+.billContainer {
+    width: 1270px;
+    margin: 0 auto;
+    /* display: none; */
+    font-family: 'Baloo Tamma 2', cursive;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'NTR', sans-serif;
+    font-size: 19px;
+}
+
+.billHeader {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Inspiration', cursive;
+    font-family: 'Vujahday Script', cursive;
+    font-size: 5rem;
+    color: #89216B;
+}
+
+.billGeneral {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.billGeneral img {
+    width: 100%;
+}
+
+.group-input {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+#customerAddress,
+#customerName,
+#customerPhoneNumber,
+#orderDate {
+    width: 70%;
+    outline: none;
+    border: none;
+    border-bottom: 1px dotted #ccc;
+    border-radius: 4px;
+}
+
+#listProduct thead tr th,
+#listProduct thead tr td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#listProduct {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.endBill {
+    float: right;
+}
+
+.endBill span {
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+#displayShipmentFee::before,
+#displayTotal::before {
+    content: "$";
+}
+
+.shipmentFeeEndBill,
+.TotalEndBill {
+    display: flex;
+    justify-content: space-between;
+}
+
+#go {
+    padding: 8px 5px;
+    border-radius: 4px;
+    background-color: #3da9e2;
+    border: none;
+}
+
+#go a {
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 500;
+}
+
+#waitConfirm {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(133, 130, 130, 0.467);
+    display: none;
+    text-align: center;
+}
+
+.waitConfirmContainer {
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 200px;
+    left: 500px;
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.8s;
+    animation: animatezoom 0.8s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}

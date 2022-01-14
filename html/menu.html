@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/e9a94fc643.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- send email -->
+    <script src="https://kit.fontawesome.com/e9a94fc643.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/headerAndFooter.css">
+
+    <title>Menu</title>
+</head>
+
+<body>
+    <div id="headerSection">
+
+    </div>
+
+    <div class="indexing">
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li onclick="showAllType()"><a href="#">Category</a></li>
+            <li><a href="#" id="categoryTittle">All Products</a></li>
+        </ul>
+
+    </div>
+
+    <div class="container main">
+        <div class="menuleft">
+            <ul>
+                <li class="menuleft-item"><a href="#">home</a></li>
+                <li class="menuleft-item"><a href="#">about us</a></li>
+                <li class="menuleft-item"><a href="#">clearance sale</a></li>
+                <li class="menuleft-item"><a href="#">outlet</a></li>
+                <li class="menuleft-item"><a href="#">new arrivals</a></li>
+                <li class="menuleft-item"><a href="#">products</a>
+                    <ul class="menuleft-dropdown">
+                        <li class="categoryItem" value="Necklace"><a href="#">Necklace</a></li>
+                        <li class="categoryItem" value="Ring"><a href="#">Ring</a></li>
+                        <li class="categoryItem" value="Earring"><a href="#">Earring</a></li>
+                        <li class="categoryItem" value="Bracelet"><a href="#">Bracelet</a></li>
+                        <li class="categoryItem" value="Anklet"><a href="#">Anklet</a></li>
+                    </ul>
+                </li>
+                <li class="menuleft-item"><a href="#">collection</a></li>
+                <li class="menuleft-item"><a href="#">size chart</a></li>
+                <li class="menuleft-item"><a href="#">policy</a></li>
+                <li class="menuleft-item"><a href="#">contact</a></li>
+            </ul>
+            <form class="filter" onclick="check()">
+                <h4>Filter products by price</h4>
+                <input type="radio" name="choosePrice" id="p1000" class="check" value="1000-2000">
+                <label for="p1000">$1000 - $2000</label> <br>
+                <input type="radio" name="choosePrice" id="p2000" class="check" value="2000-5000">
+                <label for="p2000">$2000 - $5000</label> <br>
+                <input type="radio" name="choosePrice" id="p5000" class="check" value="5000-10000">
+                <label for="p5000">$5000 - $10000</label> <br>
+                <input type="radio" name="choosePrice" id="p10000" class="check" value="10000-30000">
+                <label for="p10000">$10000 - $30000</label> <br>
+                <input type="radio" name="choosePrice" id="p30000" class="check" value="30000">
+                <label for="p30000">More than $30000</label> <br>
+            </form>
+        </div>
+        <div class="productsSection">
+            <div>
+                <div class="headerProducts">
+                    <h2 id="titleCatogory">
+
+                    </h2>
+                </div>
+                <div id="displayProducts">
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- Footer-->
+    <div id="footerSection">
+
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/headerAndFooter.js"></script>
+    <script src="../js/menu.js"></script>
+
+
+</body>
+
+</html>

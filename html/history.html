@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/headerAndFooter.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/e9a94fc643.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>History</title>
+</head>
+
+<body>
+    <div id="headerSection"></div>
+
+    <div class="historyContainer">
+        <div class="historyTittle">
+            <h1 style="text-transform: uppercase;">Purchase history</h1>
+        </div>
+        <div class="historyContent">
+            <table class="historyTable">
+                <thead id="historyTableHeader">
+                    <tr>
+                        <th>Numerical order</th>
+                        <th>Receiver</th>
+                        <th>Receiver's address</th>
+                        <th>Order date</th>
+                        <th>Shipment fee</th>
+                        <th>Total price</th>
+                        <th>See details</th>
+                    </tr>
+                </thead>
+                <tbody id="displayHistory">
+
+                </tbody>
+
+            </table>
+        </div>
+        <div id="seeOrderDetail">
+            <div class="seeOrderDetailContainer animate">
+                <div class="seeOrderTittle">
+                    <h2 style="text-transform: uppercase;">order details</h2>
+                    <button id="closeSeeOrderDetail"><ion-icon name="close-outline"></ion-icon></button>
+                </div>
+                <div class="seeOrderContent">
+                    <table>
+                        <thead id="seeOrderTableHeader">
+                            <tr>
+                                <th>Numerical order</th>
+                                <th>Product name</th>
+                                <th>Amount</th>
+                                <th>Price</th>
+                                <th>Image</th>
+                            </tr>
+                        </thead>
+                        <tbody id="displaySeeOrder">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footerSection"></div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/headerAndFooter.js"></script>
+</body>
+
+</html>

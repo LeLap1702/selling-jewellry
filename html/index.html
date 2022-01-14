@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/homePage.css">
+    <link rel="stylesheet" href="../assets/css/headerAndFooter.css">
+    <script src="https://kit.fontawesome.com/e9a94fc643.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <title>Luxury</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- MENU -->
+        <div id="headerSection">
+
+        </div>
+        <!-- Slides show start -->
+        <div class="slider">
+            <div class="slides">
+                <!--button start  -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--button end  -->
+                <!-- slider img statr -->
+                <div id="slides_img" class="slide first">
+                    <img src="https://kpopping.com/documents/34/3/3465/Rose-for-Tiffany-Co-Tiffany-HardWear-documents-6(1).jpeg" alt="">
+                </div>
+                <div id="slides_img" class="slide ">
+                    <img src="https://images.squarespace-cdn.com/content/v1/533de1d1e4b099c54d48e3e1/1621691604941-3S1GD0Q9FJDCJVX7130R/Model_6_52-crop-web.jpg" alt="">
+                </div>
+                <div id="slides_img" class="slide">
+                    <img src="https://assets.vogue.com/photos/5f5f85d23a69c0493d8b1b0f/master/w_2560%2Cc_limit/Ana__NDC__1.jpg" alt="">
+                </div>
+                <div id="slides_img" class="slide">
+                    <img src="https://cdn.fredleighton.com/wp-content/uploads/Homepage-Hero-2880px.jpg" alt="">
+                </div>
+                <!-- slider img end -->
+                <!--navigation start  -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--navigation end  -->
+                <!-- manual navigation start -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!-- manual navigation end -->
+                <script type="text/javascript">
+                    var counter = 1;
+                    setInterval(function() {
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++;
+                        if (counter > 4) {
+                            counter = 1
+                        }
+                    }, 5000);
+                </script>
+            </div>
+        </div>
+        <div class="allProducts">
+            <div class="pro_newArrival">
+                <h2>necklaces New arrivals </h2>
+                <hr><br>
+                <hr class="line1">
+                <div class="adPro1">
+                    <div id="adPro1-img">
+                        <img src="https://media.vogue.co.uk/photos/61ba354c2e6d06cbe87de23b/2:3/w_1920,c_limit/SS_VOGUE_SH02_f7%20copy.jpg" alt="">
+                    </div>
+                    <div id="adPro1-text">
+                        <p>JEWELLERY</p><br> 5 Major Necklace Trends To Keep Track Of In 2022 <br>
+                        <hr>
+                        <p>14 JANUARY 2022</p>
+                    </div>
+                </div>
+                <div class="productsSection1">
+                    <div class="proCard1">
+                        <div id="displayPro1-left"></div>
+                        <div id="displayPro1-right-img">
+                            <!-- <p><span id="n">Ne</span>cklace</p> -->
+                            <img src="../assets/images/img/image-right.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pro_dailyOffer">
+                <h2>Rings New arrivals </h2>
+                <hr>
+                <div class="adPro2">
+                    <div id="adPro2-text"><span>R I</span><span id="ng"> N G</span></div>
+                    <div id="adPro2-img">
+                        <img src="https://res.cloudinary.com/mejuri-com/image/upload/c_scale,f_auto,q_60,w_1980/v1637947392/homepage/Monday-drop/2021/December/64_Charlotte_DT" alt="">
+                    </div>
+                </div>
+                <div class="productsSection2">
+                    <div class="proCard2">
+                        <div id="displayPro2-bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_banner">
+            <div class="banner_img" id="banner_img">
+                <h2>2LTU LUXURY</h2>
+                <hr>
+                <div id="group-banner">
+                    <img src="https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-victoriaearrings-23954168_997901_ED_M-23954168_1028075_SV_1.jpg?hei=480&wid=480" alt="">
+                    <img src="https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-tt1-ring-67796659_1013904_ED_M-67796659_1012020_SV_1_M.jpg?hei=480&wid=480" alt="">
+                    <img src="https://media.tiffany.com/is/image/tiffanydm/holiday-OnFig-Bracelet2-alt2?$tile$&wid=1488&hei=1488" alt="">
+                    <img src="https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/palomas-graffitilove-pendant-26189993_928743_ED_M-33476744_1029633_SV_1.jpg?hei=480&wid=480" alt="">
+                    <img src="https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/palomas-graffitilove-ring-60571422_1031022_ED_M-60571422_1031023_SV_1_M.jpg?hei=480&wid=480" alt="">
+                    <img src="https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-victoriaearrings-38050982_1031018_ED-38050982_1031019_SV_1.jpg?hei=480&wid=480" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footerSection" class="">
+
+    </div>
+    <div class="footer">
+        <div></div>
+        <div class="slogan">
+            <h3>2ltu Luxury</h3>
+            <p>2LTU Luxury Jewelry is a pioneer in the field of jewelry accessories specializing in necklaces, rings, bracelets with a variety of materials designed according to the shop's own style. Established in 2000, Luxury Jewelry has provided millions
+                of products to all Vietnamese and foreign customers with the desire to bring the best value to users.</p>
+            <img class="logo" src="../assets/images/img/logo1.png" alt="">
+            <p class="slogan_icon"><a href="https://www.youtube.com/watch?v=X1vfCsJ6hAU"><i class="fab fa-facebook"></i></a> <a href=""><i class="fab fa-instagram"></i></a></p>
+        </div>
+        <div class="menu_footer">
+            <h3>Main menu</h3>
+            <p>- home</p>
+            <p>- About us</p>
+            <p>- new arrivals</p>
+            <p>- products</p>
+            <p>- size chart</p>
+            <p>- contact</p>
+        </div>
+        <div class="contact_information">
+            <h3>contact information</h3>
+            <p>- Address: 101B,Le Huu Trac, Son Tra, Da Nang, Viet Nam</p>
+            <p>- Phone number: 1900633513</p>
+            <p>- Email: luxury2ltu@gmail.com</p>
+            <p>- Facebook: 2ltu Luxury</p>
+            <p>- Instagram: 2ltu_luxury</p>
+        </div>
+        <div class="fanpage">
+            <h3>fanpage</h3>
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0" nonce="MP37wf4a"></script>
+            <div class="fb-page " data-href="https://www.facebook.com/Y-&#xca;-U-&#x110;-&#x1a0;-N-P-H-&#x1af;-&#x1a0;-N-G-302869896864999/" data-tabs="timeline" data-width="300px" data-height="250px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true"
+                data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/Y-&#xca;-U-&#x110;-&#x1a0;-N-P-H-&#x1af;-&#x1a0;-N-G-302869896864999/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Y-&#xca;-U-&#x110;-&#x1a0;-N-P-H-&#x1af;-&#x1a0;-N-G-302869896864999/">2LTU Luxury</a></blockquote>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <p class="end">Copyright © 2021 2LTU Luxury. Powered by Haravan</p>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/headerAndFooter.js"></script>
+    <script src="../js/homePage.js"></script>
+    </div>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "302869896864999");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v12.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+
+</html>

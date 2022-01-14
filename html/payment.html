@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/payment.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Payment</title>
+
+</head>
+
+<body>
+    <div id="waitConfirm">
+        <div class="waitConfirmContainer animate">
+            <div>
+                <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+            </div>
+            <p>Please wait a few seconds to confirm!</p>
+        </div>
+    </div>
+
+    <section id="paymentSection">
+
+        <div class="headerPaymentPage">
+            <div>
+                <h1>2LTU</h1>
+            </div>
+            <div class="indexing">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a></li>
+                    <li>
+                        <a href="cart.html">Cart</a></li>
+                    <li>
+                        <a href="#">Payment method</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left">
+
+                <div>
+                    <div>
+                        <h3>Mode of transportation</h3>
+                        <p class="border">Home delivery :$2</p>
+                    </div>
+                    <div>
+                        <h3>Payment method</h3>
+                        <div>
+                            <form>
+                                <div class="border"><input name="gender" type="radio" onclick="remove()" />Payable on delivery(COD)</div> <br>
+                                <div class="border"><input name="gender" type="radio" onclick="bank()" />Transfer by bank</div>
+
+                                <div id="infor">
+                                    <p>Account number: 4213205065047</p>
+                                    <p>Account holder: Bui Thi Tien</p>
+                                    <p>Bank name: Agribank</p>
+                                    <p>Please choose 24/7 express transfer method. After transferring, the 2LTU customer service department will take the initiative to complete the order and pack for shipping.</p>
+                                    <p>Please take a screenshot of the successful transfer to protect your rights when there is an error in the system.</p>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <h3>Shipment Details</h3>
+                    <div><a>Do you have an account?</a> <a id="signUpHere" href="#" onclick="displayLogin()">Sign up here</a>
+                    </div>
+                    <div>
+                        <input class="fullName" id="txtFullname" type="text" placeholder="Full name">
+                        <br> <br>
+                        <div>
+                            <input id="txtEmail" type="text" placeholder="Email">
+                            <input id="txtPhone" type="text" placeholder="Phone number">
+                        </div>
+                        <br>
+                        <div>
+                            <input class="address" id="txtAddressDetailed" type="text" placeholder="Address detailed">
+                        </div>
+                        <br>
+                        <div>
+                            <input id="txtProvince" type="text" placeholder="Province">
+                            <input id="txtDistrict" type="text" placeholder="District">
+                            <input id="txtCommune" type="text" placeholder="Commune">
+                        </div>
+                        <br>
+                        <div>
+                            <button id="completeOrder" type="submit" onclick="setdata()">Complete the order</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="billSection">
+        <div class="billContainer">
+            <div class="billHeader">
+                <h1>Your order</h1>
+            </div>
+            <div class="billMain">
+                <div class="billGeneral">
+                    <div><img src="../assets/images/logo.png" alt=""></div>
+                    <div>
+                        <div class="group-input">
+                            <label for="customerName">Customer name</label>
+                            <input type="text" id="customerName">
+                        </div>
+                        <div class="group-input">
+                            <label for="customerPhoneNumber">Customer phone number</label>
+                            <input type="text" id="customerPhoneNumber">
+                        </div>
+                        <div class="group-input">
+                            <label for="customerAddress">Customer address</label>
+                            <input type="text" id="customerAddress">
+                        </div>
+                        <div class="group-input">
+                            <label for="orderDate">Order date</label>
+                            <input type="text" id="orderDate">
+                        </div>
+                    </div>
+                </div>
+
+                <table id="listProduct">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <thead id="billProducts">
+
+                    </thead>
+                </table>
+
+                <div class="endBill">
+                    <div class="shipmentFeeEndBill">
+                        <span>Shipment fee: </span>
+                        <div id="displayShipmentFee">0</div>
+                    </div>
+                    <div class="TotalEndBill">
+                        <span>Total: </span>
+                        <div id="displayTotal">0</div>
+                    </div>
+                </div>
+
+            </div>
+            <button id="go" onclick="end()">Confirm the order</button>
+            <!-- <div id="waitConfirm">
+                <div>
+                    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                </div>
+                <p>Please wait a few seconds to confirm!</p>
+            </div> -->
+        </div>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/payment.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
