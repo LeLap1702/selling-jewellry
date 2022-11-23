@@ -17,7 +17,7 @@ function callAPI(endpoint, method = "GET", body) {
 document.getElementById('headerSection').innerHTML = `
 <div class="menu">
 <nav class="nav_menu">
-    <div><img class="logo" src="../assets/images/img/logo1.png" alt=""></div>
+    <a href="/"><img class="logo" src="../assets/images/img/logo1.png" alt="logo"></a>
     <div><ul class="main_menu">
             <li><a href="index.html"><b>home</b></a></li>
             <li><a href=""><b>about us</b></a></li>
