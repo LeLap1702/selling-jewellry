@@ -5,6 +5,8 @@ body {
     font-family: 'Mukta', sans-serif;
     font-family: 'NTR', sans-serif;
     font-size: 19px;
+    position: relative;
+    overflow-x: hidden;
 }
 
 
